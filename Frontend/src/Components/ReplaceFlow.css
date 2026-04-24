@@ -1,0 +1,118 @@
+.replace-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prompts-results{
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #232d3d;
+    border-radius: 12px;
+    padding: 10px;
+    background: #0f1214;
+}
+
+/* Scroll más bonito (opcional pero pro) */
+.prompts-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.prompts-results::-webkit-scrollbar-thumb {
+    background: #2a3445;
+    border-radius: 10px;
+}
+
+.prompts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+}
+
+.prompt-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #121312;
+    border: 1px solid #222;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.prompt-card:hover {
+    transform: scale(1.03);
+    border-color: #3b82f6;
+}
+
+.prompt-card.selected {
+    border: 2px solid #22c55e;
+}
+
+.prompt-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.placeholder {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+}
+
+.prompt-info {
+    padding: 8px;
+    color: white;
+    font-size: 13px;
+}
+
+.selected-prompt {
+    padding: 10px;
+    border-radius: 8px;
+    background: #ecfdf5;
+    border: 1px solid #22c55e;
+}
+
+
+.replace-btn {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #dc2626;
+    color: white;
+    cursor: pointer;
+}
+
+.confirm-box {
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff7ed;
+    border: 1px solid #f97316;
+}
+
+.confirm-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.confirm {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #16a34a;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #6b7280;
+    color: white;
+    cursor: pointer;
+}

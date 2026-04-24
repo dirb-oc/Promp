@@ -1,0 +1,31 @@
+.tabs-container {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.tabs-container button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #232d3d;
+    background: #111215;
+    color: white;
+    cursor: pointer;
+}
+
+.tabs-container button.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.action-panel {
+    background: #111215;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #232d3d;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

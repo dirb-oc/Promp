@@ -1,0 +1,54 @@
+.image-card {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    background: #0b1120;
+}
+
+/* Imagen */
+.image-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-img.loaded {
+    opacity: 1;
+}
+
+/* Skeleton */
+.image-skeleton {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        #0b1120 25%,
+        #1e293b 50%,
+        #0b1120 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.2s infinite;
+}
+
+/* Animación */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* 🔥 Mejora UX (opcional pero recomendado) */
+.image-card:hover .image-img {
+    transform: scale(1.03);
+}
+
+.image-img {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}

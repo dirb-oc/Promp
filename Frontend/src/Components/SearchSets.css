@@ -1,0 +1,126 @@
+.searchsets-container label{
+    color: white;
+    font-weight: 600;
+}
+
+.searchsets-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.searchsets-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #0f1214;
+    border: 1px solid #232d3d;
+    color: white;
+    outline: none;
+}
+
+.searchsets-bar button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.searchsets-bar button:hover {
+    background: #1d4ed8;
+}
+
+.searchsets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 6px;
+}
+
+.searchsets-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #121312;
+    border: 1px solid #222d3d;
+    cursor: pointer;
+    transition: transform 0.15s ease, border 0.2s ease;
+}
+
+.searchsets-card:hover {
+    transform: scale(1.02);
+    border-color: #3b82f6;
+}
+
+.searchsets-card.selected {
+    border: 2px solid #22c55e;
+    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+.searchsets-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.searchsets-placeholder {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+}
+
+.searchsets-info {
+    padding: 10px;
+}
+
+.searchsets-info h4 {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.searchsets-status {
+    margin-top: 20px;
+    color: #666;
+    max-height: 400px;
+    font-size: 16px;
+}
+
+.searchsets-results {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #232d3d;
+    border-radius: 12px;
+    padding: 10px;
+    background: #0f1214;
+}
+
+/* Scroll más bonito (opcional pero pro) */
+.searchsets-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.searchsets-results::-webkit-scrollbar-thumb {
+    background: #2a3445;
+    border-radius: 10px;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .searchsets-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .searchsets-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 12px;
+    }
+}

@@ -1,0 +1,36 @@
+# ========================
+# 🔒 ENV (en TODO el proyecto)
+# ========================
+.env
+.env.*
+*.env
+
+# ========================
+# 🧠 Python / Django (Backend)
+# ========================
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Ignorar media (uploads)
+Backend/media/
+
+# ========================
+# ⚛️ Frontend (React / Vite / Next)
+# ========================
+Frontend/node_modules/
+Frontend/dist/
+Frontend/build/
+Frontend/.next/
+
+# ========================
+# 🧪 General
+# ========================
+node_modules/
+dist/
+build/
+
+# ========================
+# 🧰 Scripts (si usas cosas temporales)
+# ========================
+Scripts/node_modules/

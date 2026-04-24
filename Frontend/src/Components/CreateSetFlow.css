@@ -1,0 +1,52 @@
+.create-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+    font-weight: 600;
+}
+
+.input-group input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #232d3d;
+    background-color: #121312;
+    color: #fff;
+
+    outline: none;          /* 👈 quita borde feo al enfocar */
+    box-shadow: none;       /* 👈 elimina glow por defecto */
+}
+
+/* Estado focus (mejor UX que el default) */
+.input-group input:focus {
+    border-color: #4f8cff;
+    box-shadow: 0 0 0 2px rgba(79, 140, 255, 0.2);
+}
+
+.save-btn {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    background: #28b87c;
+    color: #0f1214;
+    cursor: pointer;
+}
+
+.save-btn:disabled {
+    opacity: 0.6;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

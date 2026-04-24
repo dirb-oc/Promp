@@ -1,0 +1,152 @@
+/* ===== HEADER ===== */
+.status {
+    margin-bottom: 15px;
+}
+
+.status h2 {
+    font-size: clamp(18px, 2vw, 22px);
+    font-size: 24px;
+    font-weight: 700;
+    color: #e2e8f0;
+}
+
+.status-line {
+    font-style: italic;
+    color: #94a3b8;
+}
+
+/* Indicadores */
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.status-dot.active {
+    background: #22c55e;
+    box-shadow: 0 0 6px #22c55e88;
+}
+
+.status-dot.inactive {
+    background: #5b5757;
+}
+
+/* ===== CARD / FORM ===== */
+.card-launcher {
+    border: 1px solid #1e293b;
+    width: 100%;
+    max-width: 1130px;
+    border-radius: 12px;
+    background: #080a0d;
+    padding: clamp(16px, 4vw, 20px) clamp(18px, 2vw, 30px);
+}
+
+/* Subtítulo */
+.card-launcher h3 {
+    color: #f1f5f9;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Labels */
+.label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+/* Inputs */
+.input, .select{
+    width: 100%;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: clamp(12px, 1.2vw, 14px);
+    background: #0a0b0a;
+    color: #e2e8f0;
+    outline: none;
+    resize: none;
+    transition: all 0.2s ease;
+}
+
+.input::placeholder {
+    color: #64748b;
+}
+
+.input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px #2563eb33;
+}
+
+/* Textareas */
+.textarea-big {
+    min-height: 120px;
+    margin-bottom: 15px;
+}
+
+.textarea-small {
+    min-height: 80px;
+    margin-bottom: 20px;
+}
+
+/* ===== BOTÓN ===== */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #fff;
+    font-size: clamp(13px, 2vw, 15px);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    transform: translateY(-1px);
+}
+
+.btn:disabled {
+    background: #334155;
+    cursor: not-allowed;
+}
+
+/* ===== RESULT ===== */
+.result {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1130px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    font-size: 14px;
+}
+
+/* ✔️ Éxito */
+.result p:not(.error) {
+    color: #4ade80;
+    font-weight: 500;
+}
+
+/* ❌ Error */
+.result .error {
+    color: #f87171;
+    font-weight: 500;
+}
+
+/* CONTENEDOR GENERAL */
+.card-containerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
